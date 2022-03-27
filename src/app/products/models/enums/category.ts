@@ -1,6 +1,6 @@
 export enum Category {
-  Electronics,
-  Beauty,
-  Home,
-  Sports,
+    Electronics,
+    Beauty,
+    Home,
+    Sports,
 }

@@ -4,8 +4,7 @@ import { Category } from '../../models/enums/category';
 
 @Component({
     selector: 'app-first',
-    templateUrl: './first.component.html',
-    styleUrls: ['./first.component.css']
+    templateUrl: './first.component.html'
 })
 export class FirstComponent implements OnInit {
     name: string;

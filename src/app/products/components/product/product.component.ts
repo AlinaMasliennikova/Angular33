@@ -5,8 +5,7 @@ import { ProductModel } from '../../models';
 
 @Component({
     selector: 'app-product',
-    templateUrl: './product.component.html',
-    styleUrls: ['./product.component.css']
+    templateUrl: './product.component.html'
 })
 export class ProductComponent {
     @Input() product: ProductModel;
