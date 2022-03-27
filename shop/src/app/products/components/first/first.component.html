@@ -1,0 +1,9 @@
+<h2>Product details</h2>
+<div>Name: {{name}}</div>
+<div>Description: {{description}}</div>
+<div>Price: {{price}}</div>
+<div>Available: {{isAvailable}}</div>
+<div>Categories:</div>
+<ul>
+    <li *ngFor="let category of categories"><span>{{getCategoryName(category)}}</span></li>
+</ul>
