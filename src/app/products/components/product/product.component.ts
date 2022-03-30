@@ -10,6 +10,9 @@ import { ProductModel } from '../../models';
 export class ProductComponent {
     @Input() product: ProductModel;
 
+    // тут не нужно внедрять зависимость,
+    // компонент получил данные от родителя,
+    // значить надо сформировать output
     constructor(private cartService: CartService) { }
 
     onAddToCart(): void {
