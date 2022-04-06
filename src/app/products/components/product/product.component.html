@@ -1,1 +1,6 @@
-<button type="button" class="btn btn-primary" (click)="onAddToCart()">Buy</button>
+<div class="row grid-line flex-h-between mb-2">
+    <div class="col-10" [ngClass]="product.isAvailable ? 'text-dark' : 'text-muted'">{{product.name}}</div>
+    <button type="button" class="btn btn-primary col-2" (click)="onAddToCart()" [disabled]="!product.isAvailable">
+        Buy
+    </button>
+</div>

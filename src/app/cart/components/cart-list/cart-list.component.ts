@@ -13,7 +13,27 @@ export class CartListComponent {
         return this.cartService.getItems();
     }
 
+    get totalQuantity(): number {
+        return this.cartService.getTotalQuantity();
+    }
+
+    get totalCost(): number {
+        return this.cartService.getTotalCost();
+    }
+
     constructor(private cartService: CartService) { }
+
+    onIncreaseQuantity(item: CartItemModel): void {
+        this.cartService.increaseQuantity(item);
+    }
+
+    onDecreaseQuantity(item: CartItemModel): void {
+        this.cartService.decreaseQuantity(item);
+    }
+
+    onDeleteItem(item: CartItemModel): void {
+        this.cartService.deleteItem(item);
+    }
 
     onClear() {
         this.cartService.clearItems();
