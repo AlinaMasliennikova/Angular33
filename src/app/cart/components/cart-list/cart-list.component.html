@@ -4,7 +4,7 @@
     </div>
     <div class="panel-body">
         <div class="container" *ngIf="items.length > 0; else emptyCart">
-            <app-cart-item
+            <app-cart-item appHighlight
                 *ngFor="let item of items; trackBy: trackByItems"
                 [item]="item"
                 (increaseQuantity)="onIncreaseQuantity($event)"
