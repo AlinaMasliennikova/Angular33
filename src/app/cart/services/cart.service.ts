@@ -45,7 +45,7 @@ export class CartService {
     }
 
     deleteItem(item: CartItemModel): void {
-        const index = this.items.findIndex(x => x.product.id == item.product.id);
+        const index = this.items.findIndex(x => x.product.id === item.product.id);
         this.items.splice(index, 1);
     }
 
@@ -54,6 +54,6 @@ export class CartService {
     }
 
     private getItem(product: ProductModel): CartItemModel {
-        return this.items.find(x => x.product.id == product.id);;
+        return this.items.find(x => x.product.id === product.id);;
     }
 }
